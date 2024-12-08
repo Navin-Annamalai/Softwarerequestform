@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Request Form</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+        }
+        .form-container h2 {
+            text-align: center;
+            color: darkblue;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 8px;
+        }
+        
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Software Request</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="employee-id">Employee ID *</label>
+                <input type="text" id="employee-id" name="employee-id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile No / Extn.No</label>
+                <input type="text" id="mobile" name="mobile">
+            </div>
+
+            <div>
+                <label>Which software do you require? *</label><br>
+                <input type="checkbox" id="software-a" name="software" value="Software A">
+                <label for="software-a">Software A</label><br>
+
+                <input type="checkbox" id="software-b" name="software" value="Software B">
+                <label for="software-b">Software B</label><br>
+
+                <input type="checkbox" id="software-c" name="software" value="Software C">
+                <label for="software-c">Software C</label><br><br><br>
+            </div>
+
+            <div>
+                <label>How urgently do you need it? *</label><br>
+                <input type="radio" id="asap" name="urgency" value="As soon as possible" required>
+                <label for="asap">As soon as possible</label><br>
+                <input type="radio" id="two-weeks" name="urgency" value="Within 2 to 3 weeks">
+                <label for="two-weeks">Within 2 to 3 weeks</label><br>
+                <input type="radio" id="no-hurry" name="urgency" value="I'm in no hurry">
+                <label for="no-hurry">I'm in no hurry</label>
+            </div><br><br>
+
+            <button type="submit" class="submit-button">Request</button>
+        </form>
+    </div>
+</body>
+</html>
